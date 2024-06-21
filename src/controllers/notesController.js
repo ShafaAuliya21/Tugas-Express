@@ -40,7 +40,7 @@ const addNotes = async (req, res) => {
   const { body } = req;
   if (!body.title || !body.datetime || !body.note) {
     res.status(400).json({
-      message: "Data Tidak Lengkap!",
+      message: "Lengkapi Data",
     });
   }
   try {
@@ -66,7 +66,7 @@ const updateNotes = async (req, res) => {
   console.log(id);
   if (!body.title || !body.datetime || !body.note) {
     res.status(400).json({
-      message: "Data Tidak Lengkap!",
+      message: "Lengkapi Data",
     });
   }
   try {
